@@ -12,3 +12,4 @@ class Anagram
   end.each {|ele2| result << if ele2 == word}
   result
 end
+end
