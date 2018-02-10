@@ -8,10 +8,14 @@ class Anagram
 # #
   def match(array)
     result = []
-    array.map do |ele|
-      ele.split("").sort
+    result2 = []
+    array.each do |ele|
+      result << ele.split("").sort
   end
-  result
+  result.each do |ele2|
+    result2 << ele2 if ele2 == word
+  end
+  result2
 end
 
 end
