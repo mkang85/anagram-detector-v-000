@@ -10,7 +10,7 @@ class Anagram
     result = []
     result2 = []
     array.each do |ele|
-      result << ele.split("").sort.join(" ")
+      result << ele.split("").sort.join("")
   end
   result.each do |ele2|
     result2 << ele2 if ele2 == self.word
