@@ -14,7 +14,7 @@ class Anagram
       result << ele.split("").sort.join("")
   end
   result.each do |ele2|
-    result2 << self.word if ele2 == self.word.split("").sort.join("")
+    result2 << ele2 if ele2 == self.word.split("").sort.join("")
   end
   result2
 end
