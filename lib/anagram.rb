@@ -12,9 +12,10 @@ class Anagram
     array.each do |ele|
       result << ele.split("").sort.join("")
   end
+  changed = self.word.split("").sort.join("")
   result.each do |ele2|
-  if ele2 == self.word.split("").sort.join("")
-    result2 << ele2
+  if ele2 == changed
+    result2 << self.word
     end
   end
   result2
