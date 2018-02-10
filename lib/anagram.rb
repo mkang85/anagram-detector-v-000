@@ -9,12 +9,13 @@ class Anagram
   def match(array)
     result = []
     result2 = []
-    result3 = []
     array.each do |ele|
       result << ele.split("").sort.join("")
   end
   result.each do |ele2|
-    result2 << ele2 if ele2 == self.word.split("").sort.join("")
+  if ele2 == self.word.split("").sort.join("")
+    result2 << self.word
+    end
   end
   result2
 end
