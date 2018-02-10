@@ -7,18 +7,7 @@ class Anagram
   end
 # #
   def match(array)
-    result = []
-    result2 = []
-    array.each do |ele|
-      result << ele.split("").sort.join("")
-  end
-  changed = self.word.split("").sort.join("")
-  result.each do |ele2|
-  if ele2 == changed
-    result2 << self.word
-    end
-  end
-  result2
+    array.select {|x| x.split("").sort == @word.split("").sort}
 end
 
 end
